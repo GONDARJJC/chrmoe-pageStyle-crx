@@ -1,0 +1,27 @@
+{
+  "name": "Page Redder",
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "hello.html"
+  },
+  "manifest_version": 3,
+  "version": "0.2",
+  "description": "Turns the page red when you click the icon",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "<all_urls>",
+    "declarativeContent",
+    "storage",
+    "tabs",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "chrome-extension://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

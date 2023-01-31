@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Hello, World!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            min-height: 500px;
+            min-width: 500px;
+            /*background: salmon;*/
+        }
+
+        #textarea {
+            width: 300px;
+            height: 300px;
+        }
+
+        #utils{
+            transition: all ease 0.5s;
+            overflow-y: scroll;
+            height: 170px;
+        }
+
+        #utilHead{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="utils">
+    <h1 id="utilHead">Utils</h1>
+    <h2>TimeStamp Trans</h2>
+    <label for="time">time: </label><input id="time" type="text">
+    <select name="" id="timeSelect">
+        <option value="millSec" selected>毫秒</option>
+        <option value="second">秒</option>
+    </select>
+    <button id="timeBtn">Trans</button>
+    <span id="timeRes"></span>
+
+    <h2>Date Trans</h2>
+    <label for="date">date: </label><input id="date" type="text">
+    <button id="dateBtn">Trans</button>
+    <span id="dateRes"></span>
+    <select name="" id="dateSelect">
+        <option value="millSec" selected>毫秒</option>
+        <option value="second">秒</option>
+    </select>
+
+
+</div>
+
+<div id="pages">
+    <h2>Page Css</h2>
+    <textarea id="textarea"></textarea>
+    <button id="button">Save</button>
+    <button id="buttonGet">Get</button>
+    <button id="fmtGet">Format</button>
+</div>
+<script src="vendor/rxjs.js"></script>
+<script src="vendor/cssPre.js"></script>
+<script src="vendor/parse.js"></script>
+<script src="util.js"></script>
+
+<!--<script src="./mini.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/terser/dist/bundle.min.js"></script>-->
+<script src="script.js"></script>
+</body>
+</html>
